@@ -8,9 +8,9 @@ import './App.css';
 import { NavbarBrand } from 'react-bootstrap';
 
 import Footer from './components/Footer';
-import AboutMePage from './components/AboutMePage';
-import PortfolioPage from './components/PortfolioPage';
-import ContactPage from './components/ContactPage';
+import AboutMePage from './pages/AboutMePage';
+import PortfolioPage from './pages/PortfolioPage';
+import ContactPage from './pages/ContactPage';
 
 class App extends React.Component() {
 
