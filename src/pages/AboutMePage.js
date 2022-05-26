@@ -12,7 +12,6 @@ function AboutMePage(props) {
                 About me paragraph content
             </Content>
         </div>
-        // <Jumbo title={props.title}/>
     )
 }
 

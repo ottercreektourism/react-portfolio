@@ -4,9 +4,9 @@ import Jumbo from '../components/Jumbo';
 import Content from '../components/Content';
 import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
-import { render } from 'sass';
+// import { render } from 'sass';
 
-class ContactPage extends React.Component() {
+class ContactPage extends React.Component {
 
     constructor(props) {
         super(props);
@@ -32,7 +32,7 @@ class ContactPage extends React.Component() {
         });
     }
 
-    handleChange = (e) => {
+    handleSubmit = (e) => {
         console.log(e);
 
         e.preventDefault();
@@ -54,7 +54,7 @@ class ContactPage extends React.Component() {
                         </Form.Group>
                         <Form.Group>
                             <Form.Label htmlFor="email">email</Form.Label>
-                            <Form.Control id="email" name="email" type="email" value={this.state.email} onChange={this.handleChange}/>
+                            <Form.Control id="email" name="email" type="email" required value={this.state.email} onChange={this.handleChange}/>
                         </Form.Group>
                         <Form.Group>
                             <Form.Label htmlFor="message">message</Form.Label>
