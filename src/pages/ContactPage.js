@@ -49,15 +49,15 @@ class ContactPage extends React.Component {
                 <Content onSubmit={this.handleSubmit}>
                     <Form>
                         <Form.Group>
-                            <Form.Label htmlFor="full-name">full name here</Form.Label>
+                            <Form.Label htmlFor="full-name">Name</Form.Label>
                             <Form.Control id="full-name" name="name" type="text" value={this.state.name} onChange={this.handleChange}/>
                         </Form.Group>
                         <Form.Group>
-                            <Form.Label htmlFor="email">email</Form.Label>
+                            <Form.Label htmlFor="email">Email address</Form.Label>
                             <Form.Control id="email" name="email" type="email" required value={this.state.email} onChange={this.handleChange}/>
                         </Form.Group>
                         <Form.Group>
-                            <Form.Label htmlFor="message">message</Form.Label>
+                            <Form.Label htmlFor="message">Message</Form.Label>
                             <Form.Control id="message" name="message" as="textarea" rows="3" value={this.state.message} onChange={this.handleChange}/>
                         </Form.Group>
 
@@ -65,8 +65,9 @@ class ContactPage extends React.Component {
                             send
                         </Button>
 
-                        {this.state.emailSent === true && <p className="d-inline success-msg">email sent.</p>}
-                        {this.state.emailSent !== true && <p className="d-inline err-msg">email not sent.</p>}
+                        {/* Conditionally renders message saying whether the email was sent */}
+                        {/* {this.state.emailSent === true && <p className="d-inline success-msg">email sent.</p>}
+                        {this.state.emailSent !== true && <p className="d-inline err-msg">email not sent.</p>} */}
 
                     </Form>
                 </Content>

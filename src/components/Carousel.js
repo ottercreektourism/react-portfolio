@@ -1,4 +1,8 @@
 import React from 'react';
+// import { Container, Row } from 'react-bootstrap';
+import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
+
 
 import Card from '../components/Card';
 import ecommerce from '../assets/ecommerce';
@@ -100,4 +104,4 @@ class Carousel extends React.Component{
 
 }
 
-export default Carousel
+export default Carousel;

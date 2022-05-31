@@ -8,6 +8,7 @@ import './App.css';
 // import { NavbarBrand } from 'react-bootstrap';
 
 import Footer from './components/Footer';
+// import Carousel from './components/Carousel';
 import AboutMePage from './pages/AboutMePage';
 import PortfolioPage from './pages/PortfolioPage';
 import ContactPage from './pages/ContactPage';
@@ -52,10 +53,10 @@ class App extends React.Component {
            <Navbar.Toggle className="border-0" aria-controls="navbar-toggle"/>
            <Navbar.Collapse id="navbar-toggle">
              <Nav className="ml-auto">
-               <Link className="nav-link" to="/">About Me</Link>
-               <Link className="nav-link" to="/portfolio">Portfolio</Link>
-               <Link className="nav-link" to="/contact">Contact</Link>
-               <Link className="nav-link" to="/resume">Resume</Link>
+               <Link className="nav-link navjump" to="/">About Me</Link>
+               <Link className="nav-link navjump" to="/portfolio">Portfolio</Link>
+               <Link className="nav-link navjump" to="/contact">Contact</Link>
+               <Link className="nav-link navjump" to="/resume">Resume</Link>
 
              </Nav>
            </Navbar.Collapse>
@@ -66,7 +67,6 @@ class App extends React.Component {
                <Route path='/contact' element={ <ContactPage title={this.state.contact.title}/> } />
          </Routes>
          <Footer />
-
          </Container>
        </Router>
     );
