@@ -1,16 +1,15 @@
 import React from 'react';
-// import { Container, Row } from 'react-bootstrap';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 
 
 import Card from '../components/Card';
-import ecommerce from '../assets/ecommerce';
-import geography from '../assets/geography';
-import music from '../assets/music';
-import password from '../assets/password';
-import team from '../assets/team';
-import trails from '../assets/trails';
+import ecommerce from '../assets/ecommerce.png';
+import geography from '../assets/geography.png';
+import music from '../assets/music.png';
+import password from '../assets/password.png';
+import team from '../assets/team.png';
+import trails from '../assets/trails.png';
 
 class Carousel extends React.Component{
     constructor(props) {
@@ -19,50 +18,52 @@ class Carousel extends React.Component{
             items: [
                 {
                     id: 0,
-                    title: 'project title0',
-                    subTitle: 'language used here',
-                    imgSrc: ecommerce,
-                    link: 'google.com',
+                    title: 'TrailFinder',
+                    subTitle: 'JavaScript and CSS(Bulma)',
+                    imgSrc: trails,
+                    deployedAppLink: 'https://sdseney508.github.io/Trail-Finder/',
+                    gitHubRepoLink: 'https://github.com/sdseney508/Trail-Finder',
                     selected: false
                 },
                 {
                     id: 1,
-                    title: 'project title1',
-                    subTitle: 'language used here',
-                    imgSrc: geography,
-                    link: 'google.com',
+                    title: 'Practice Room',
+                    subTitle: 'JavaScript with SQL and Handlebars',
+                    imgSrc: music,
+                    deployedAppLink: 'https://immense-savannah-04794.herokuapp.com/',
+                    gitHubRepoLink: 'https://github.com/AllDeus/PracticeRoom',
                     selected: false
                 },
                 {
                     id: 2,
-                    title: 'project title2',
-                    subTitle: 'language used here',
-                    imgSrc: music,
-                    link: 'google.com',
+                    title: 'Geography Quiz Game',
+                    subTitle: 'Python',
+                    imgSrc: geography,
+                    gitHubRepoLink: 'https://github.com/ottercreektourism/Geography-Game',
                     selected: false
                 },
                 {
                     id: 3,
-                    title: 'project title3',
-                    subTitle: 'language used here',
+                    title: 'Social Network API (Back-End)',
+                    subTitle: 'JavaScript with Express',
                     imgSrc: password,
-                    link: 'google.com',
+                    gitHubRepoLink: 'https://github.com/ottercreektourism/social-network-api',
                     selected: false
                 },
                 {
                     id: 4,
-                    title: 'project title4',
-                    subTitle: 'language used here',
+                    title: 'Team Profile Generator (Back-End)',
+                    subTitle: 'JavaScript with Inquirer and Jest',
                     imgSrc: team,
-                    link: 'google.com',
+                    gitHubRepoLink: 'https://github.com/ottercreektourism/Team-Profile_Generator',
                     selected: false
                 },
                 {
                     id: 5,
-                    title: 'project title5',
-                    subTitle: 'language used here',
-                    imgSrc: trails,
-                    link: 'google.com',
+                    title: 'E-Commerce Back-End',
+                    subTitle: 'Javascript with Express and SQL',
+                    imgSrc: ecommerce,
+                    gitHubRepoLink: 'https://github.com/ottercreektourism/E-Commerce-Back-End',
                     selected: false
                 },
             ]
@@ -93,11 +94,16 @@ class Carousel extends React.Component{
 
     render() {
         return(
+            <>
+            <div>
+                <p>Click the images to reveal viewing options.</p>
+            </div>
             <Container fluid={true}>
                 <Row className="justify-content-around">
                     {this.makeItems(this.state.items)}
                 </Row>
             </Container>
+            </>
         );
     }
 
