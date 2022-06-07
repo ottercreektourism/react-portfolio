@@ -1,8 +1,6 @@
 import React from 'react';
 import Jumbo from '../components/Jumbo';
 import Content from '../components/Content';
-// import Header from '../components/Header';
-// import grad from '../assets/grad';
 import ProfilePic from '../components/ProfilePic';
 
 

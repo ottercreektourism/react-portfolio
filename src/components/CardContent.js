@@ -5,9 +5,6 @@ function CardContent(props) {
 
     const style = useSpring({opacity: 1, from: {opacity: 0}});
 
-    // if(deployedAppLink) {
-
-    // }
     return(
         <animated.div className="g-card-content" style={style}>
             <p className="g-card-title">{props.title}</p>

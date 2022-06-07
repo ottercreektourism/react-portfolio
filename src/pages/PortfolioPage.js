@@ -1,8 +1,6 @@
 import React from 'react';
 import Jumbo from '../components/Jumbo';
 import Carousel from '../components/Carousel';
-// import CarouselDos from 'rea'
-
 
 function PortfolioPage(props) {
     return(
