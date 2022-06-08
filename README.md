@@ -29,7 +29,12 @@ When the user opens this application, they are able to view a picture of myself 
   
   > Deployed Application: 
 
-  
+
+ ## Screenshots
+ ![alt text](./src/assets/abtme.png)
+ ![alt text](./src/assets/portfolio.png)
+ ![alt text](./src/assets/contactme.png)
+  ![alt text](./src/assets/resume.png)
   ## License
 
   This portfolio is licensed under the MIT license.  
